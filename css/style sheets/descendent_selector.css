@@ -1,0 +1,7 @@
+div >p {
+    color: red;
+}
+section + h5 {
+background-color: red;
+}
+
