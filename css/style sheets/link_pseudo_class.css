@@ -1,5 +1,5 @@
 /* unvisited link */
-a:hover
+
 a:link {
     color: red;
   }
@@ -10,7 +10,7 @@ a:link {
   }
   
   /* mouse over link */
-   {
+  a:hover {
     color: hotpink;
   }
   
@@ -18,3 +18,5 @@ a:link {
   a:active {
     color: blue;
   }
+
+  
