@@ -1,0 +1,14 @@
+image {
+    height: 100px;
+    width: 100px;
+    float: left;
+
+}
+#div1 {
+    background-color: aliceblue;
+    float: left;
+}
+#div2 {
+    background-color: blue;
+    clear: left;
+}

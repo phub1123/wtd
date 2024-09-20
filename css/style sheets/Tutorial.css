@@ -1,0 +1,24 @@
+
+.header {
+    
+    height: 40px;
+}
+.content {
+    text-align: center;
+    background-color: aliceblue;
+    min-height: 600px;
+}
+.main-content{
+    background-color: #fff;
+    min-height: 500px;
+    border: 1px solid #eee;
+}
+.footer {
+    height: 40px;
+   
+
+}
+.col-3 main-content{
+    text-align: right;
+}
+

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Room Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-image: url('images/WhatsApp_Image_2024-09-01_at_15.37.22_ea2af842.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .screen {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('images/WhatsApp_Image_2024-09-01_at_15.37.21_9dbe3bfc.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 40px;
+            border-radius: 15px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .hidden {
+            display: none;
+        }
+        .logo {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #000;
+            font-weight: bold;
+        }
+        .sub-title {
+            font-size: 18px;
+            margin-bottom: 30px;
+            color: #000;
+        }
+        .input-field {
+            width: 100%;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        .btn {
+            padding: 12px 24px;
+            background-color: #1e90ff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #0056b3;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Welcome Screen -->
+    <div class="screen" id="welcome-screen">
+        <div class="logo">HOSTEL ROOM BOOKING</div>
+        <div class="sub-title">Seamless Stay</div>
+        <button class="btn" onclick="showScreen('login-screen')">Get Started</button>
+    </div>
+    
+    <!-- Login Screen -->
+    <div class="screen hidden" id="login-screen">
+        <div class="logo">HOSTEL ROOM BOOKING</div>
+        <input type="text" id="username" placeholder="Username" class="input-field">
+        <input type="password" id="password" placeholder="Password" class="input-field">
+        <button class="btn" onclick="validateLogin()">Log In</button>
+        <div class="error" id="error-message"></div>
+    </div>
+    
+    <!-- Selection Screen -->
+    <div class="screen hidden" id="selection-screen">
+        <button class="btn">Boarding</button>
+        <button class="btn">Self Catering</button>
+    </div>
+
+    <script>
+        function showScreen(screenId) {
+            document.querySelectorAll('.screen').forEach(screen => {
+                screen.classList.add('hidden');
+            });
+            document.getElementById(screenId).classList.remove('hidden');
+        }
+
+        function validateLogin() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('error-message');
+            
+            // Update the pattern to match the username '05230124.jnec@rub.edu.bt'
+            const usernamePattern = /^05230124\.jnec@rub\.edu\.bt$/;
+
+            if (usernamePattern.test(username) && password === 'student@2024') {
+                errorMessage.textContent = '';
+                showScreen('selection-screen');
+            } else {
+                errorMessage.textContent = 'Invalid username or password. Please try again.';
+            }
+        }
+    </script>
+</body>
+</html>
