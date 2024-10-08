@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conditional Statements</title>
+</head>
+<body>
+    <p id="p1"></p>
+    <p id="p2"></p> <!-- Fixed the <p1> tag to <p> -->
+
+    <script>
+        const hour = new Date().getHours(); // Fixed method to use parentheses
+        let greetings;
+
+        if (hour < 11) {
+            greetings = "Good morning!";
+        } else if (hour < 17) {
+            greetings = "Have a good day!";
+        } else {
+            greetings = "Have a good night!";
+        }
+
+        // Display the greeting in the first paragraph
+        document.getElementById('p1').innerHTML = greetings;
+        
+        // Log the current hour for debugging
+        console.log(hour);
+    </script>
+</body>
+</html>
