@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Personal Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .navbar {
+            transition: background-color 0.5s;
+        }
+
+        footer {
+            background-color: #f8f9fa;
+            padding: 20px 0;
+        }
+
+        .social-icon {
+            margin: 0 10px;
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        .social-icon:hover {
+            color: #0056b3;
+        }
+
+        /* Dark Mode */
+        body.dark-mode {
+            background-color: #343a40;
+            color: white;
+        }
+
+        body.dark-mode .navbar {
+            background-color: #495057;
+        }
+
+        body.dark-mode footer {
+            background-color: #495057;
+        }
+
+        /* Styling for the dark mode toggle button */
+        .toggle-dark-mode {
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <a class="navbar-brand" href="#">My Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Homepage Section -->
+<section id="home" class="text-center mt-5">
+    <div class="container">
+        <h1>Phub Zam</h1>
+        <p>I am currently a second-year student at Jigme Namgyal Engineering College, pursuing a degree in Computer Systems and Networking. As part of the third semester of my course, I am gaining in-depth knowledge of networking technologies, system administration, and computing fundamentals. With a strong interest in the field of IT, I am working towards honing my technical skills and exploring the practical aspects of networking, aiming to contribute to innovative solutions in the tech industry.</p>
+        <img src="/me/WhatsApp Image 2024-09-30 at 14.05.01_ade550ec.jpg" alt="" class="img-fluid rounded-circle" style="width: 200px;">
+        <p class="mt-4">My name is Phub Zam, and I am from Wangdue. I am currently studying at Jigme Namgyel Engineering College, where I am pursuing my academic interests while also enjoying playing football in my free time. I come from a family of four siblings, and I am the youngest among them. Being part of a large family has shaped my personality, and I value the close bond I share with my siblings.</p>
+    </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="mt-5">
+    <div class="container">
+        <h2 class="text-center">Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h5>HTML</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;">90%</div>
+                </div>
+                <h5>CSS</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;">80%</div>
+                </div>
+                <h5>JavaScript</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;">75%</div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h5>React</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;">70%</div>
+                </div>
+                <h5>Bootstrap</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;">85%</div>
+                </div>
+                <h5>Node.js</h5>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%;">65%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="mt-5">
+    <div class="container">
+        <h2 class="text-center">Portfolio</h2>
+        <div class="row">
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/jnec/download.jpeg" class="card-img-top" alt="Project 1" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 1</h5>
+                        <p class="card-text">Seamless Stay...College Hostel Room Booking System</p>
+                        <a href="https://www.jnec.edu.bt/en/our-college/" class="btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/image/download (1).jpeg" class="card-img-top" alt="Project 2" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 2</h5>
+                        <p class="card-text">A portfolio website showcasing various projects, built using HTML, CSS, and Bootstrap.</p>
+                        <a href="https://www.dezven.com/project/how-to-design-portfolio-website-using-html-css-and-bootstrap" class="btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="/image/images.jpeg" class="card-img-top" alt="Project 3" style="height: 250px; width: 250px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Project 3</h5>
+                        <p class="card-text">A real-time chat application developed using Node.js and WebSocket.</p>
+                        <a href="https://refine.dev/blog/react-websocket-tutorial-nodejs/" class="btn btn-primary">View More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="mt-5">
+    <div class="container">
+        <h2 class="text-center">Contact Me</h2>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="text-center mt-5">
+    <p>Connect with me on social media:</p>
+    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+</footer>
+
+<!-- Add this new section for the Toggle Dark Mode button -->
+<div id="toggle-container" class="toggle-dark-mode">
+    <button id="mode-toggle" class="btn btn-secondary">Toggle Dark Mode</button>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    const modeToggle = document.getElementById('mode-toggle');
+    modeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+</script>
+
+</body>
+</html>
